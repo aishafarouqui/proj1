@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">proj1</string>
+
+    <string-array name="regions">
+        <item>المسفلة</item>
+        <item>العتيبية</item>
+        <item>العزيزية</item>
+        <item>الشوقية</item>
+        <item>الشرائع</item>
+        <item>الكعكية</item>
+        <item>ولي العهد</item>
+        <item>الزايدي</item>
+        <item>الحمراء</item>
+        <item>جبل النور</item>
+        <item>السبهاني</item>
+        <item>جرول</item>
+        <item>بطحاء قريش</item>
+    </string-array>
+
+</resources>
