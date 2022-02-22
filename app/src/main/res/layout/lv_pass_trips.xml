@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="134dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rectangle4"
+        android:gravity="bottom|right"
+        android:includeFontPadding="false"
+        android:paddingRight="10dp"
+        android:text="الذهاب"
+        android:textColor="#000000"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/in_trip"
+        android:gravity="center_vertical|right"
+
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/deletePassTrip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:gravity="center|center_vertical"
+            android:text="حذف"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            app:backgroundTint="@color/purple" />
+
+        <TextView
+            android:id="@+id/tvPassTrips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="موعد الرحلة:  6صباحا"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

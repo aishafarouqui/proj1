@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trip"
+    tools:context=".mainpage_driver">
+
+
+
+    <TextView
+        android:id="@+id/passengers"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:text="الصفحة الرئيسية"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/in_trip"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/signUp"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/passengers_inmain" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="تتبع المسار"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/in_trip"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/trips_inmain" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="الاشتراك بالحافلة"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/in_trip"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/elcard"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/passengers_inmain" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="البطاقة الالكترونية"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/in_trip"
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="140dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/trips_inmain" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:text="رحلاتي"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/in_trip"
+            android:gravity="center"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="140dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/main_inmain" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:gravity="center"
+                android:text="الصفحة الرئيسية"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/NavBae"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:background="#4d1290"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/person" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+    </LinearLayout>
+
+</RelativeLayout>

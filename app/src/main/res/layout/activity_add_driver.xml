@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_weight="20"
-    android:background="@drawable/login"
+    android:background="@drawable/trip"
     tools:context=".sign_in">
 
     <LinearLayout
@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="70dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:layout_marginRight="70dp"
         android:gravity="center"
         android:orientation="vertical">
@@ -23,15 +23,15 @@
             android:id="@+id/passengers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="sans-serif-black"
-            android:text="تسجيل جديد"
+            android:text="إضافة سائق"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
 
         <ImageView
-            android:id="@+id/profile_image"
-            android:layout_width="75dp"
+            android:id="@+id/profile_image2"
+            android:layout_width="match_parent"
             android:layout_height="75dp"
 
             android:background="#00FFFFFF"
@@ -43,13 +43,13 @@
             android:id="@+id/passNameSignUp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="25dp"
             android:background="@drawable/custom_input"
             android:drawableLeft="@drawable/ic_person"
             android:ems="10"
             android:gravity="right|center_vertical"
-            android:hint="الاسم"
-            android:inputType="textPersonName"
+            android:hint="الاسم "
+            android:inputType="textWebEmailAddress"
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
@@ -58,14 +58,12 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
-
             android:background="@drawable/custom_input"
             android:drawableLeft="@drawable/ic_email"
             android:ems="10"
             android:gravity="right|center_vertical"
             android:hint="البريد الالكتروني "
             android:inputType="textWebEmailAddress"
-
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
 
@@ -132,57 +130,70 @@
             android:textSize="16sp"
             app:backgroundTint="#FFFFFF"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
-        />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:background="?android:attr/selectableItemBackground"
-            android:gravity="right|center_vertical"
-            android:text="ليس لديك حساب؟"
-            android:textColor="#3F51B5"
-            android:textSize="16sp"
-            app:backgroundTint="#F2F5FE" />
-
+            android:layout_marginTop="20dp"
+            android:text="إضافة سائق"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:backgroundTint="#4D1290" />
 
     </LinearLayout>
-
     <LinearLayout
-        android:id="@+id/LinearLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/LinearLayout3"
-        android:layout_marginTop="20dp"
-        android:gravity="center_horizontal|center_vertical"
+        android:id="@+id/NavBae"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:background="#4d1290"
         android:orientation="horizontal"
-        android:paddingRight="100dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/signUp"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginRight="7dp"
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            android:paddingLeft="10dp"
-            app:srcCompat="@drawable/login_arrow" />
+            app:srcCompat="@drawable/settings" />
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:gravity="right|center_horizontal|center_vertical"
-            android:paddingRight="80dp"
-            android:text="تسجيل "
-            android:textSize="34sp" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
 
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/person" />
 
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
     </LinearLayout>
+
 
 </RelativeLayout>

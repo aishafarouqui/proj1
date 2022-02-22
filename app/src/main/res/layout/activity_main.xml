@@ -28,7 +28,7 @@
             app:srcCompat="@drawable/log_in" />
 
         <TextView
-            android:id="@+id/textView1"
+            android:id="@+id/passengers"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="sans-serif-black"
@@ -37,7 +37,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/passenger_email"
+            android:id="@+id/passEmailSignUp"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
@@ -89,6 +89,17 @@
         android:orientation="horizontal"
         android:paddingRight="100dp">
 
+        <ImageView
+            android:id="@+id/signUp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/login_arrow" />
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="180dp"
@@ -96,17 +107,6 @@
             android:gravity="right"
             android:text="تسجيل دخول"
             android:textSize="34sp" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginEnd="7dp"
-            android:layout_marginRight="7dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/login_arrow" />
 
 
     </LinearLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/trip"
+    tools:context=".my_trips">
+
+    <TextView
+        android:id="@+id/trips"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="sans-serif-black"
+        android:text="رحلاتي"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+
+    <ListView
+        android:id="@+id/lv_my_trips"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:layout_below="@+id/trips"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="30dp"
+        android:layout_marginTop="60dp"
+        tools:listitem="@layout/lv_my_trips"/>
+
+    <LinearLayout
+        android:id="@+id/NavBae"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
+        android:background="#4d1290"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/person" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+    </LinearLayout>
+
+</RelativeLayout>
