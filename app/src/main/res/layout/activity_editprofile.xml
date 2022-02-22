@@ -37,7 +37,7 @@
             android:background="#00FFFFFF"
             android:foregroundGravity="center"
             android:gravity="center"
-            app:srcCompat="@drawable/signup" />
+            app:srcCompat="@drawable/main_inmain" />
 
         <EditText
             android:id="@+id/passNameSignUp"

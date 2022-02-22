@@ -27,7 +27,6 @@
         android:layout_height="556dp"
         android:layout_above="@id/NavBae"
         android:layout_below="@id/companyNameRef"
-        android:layout_marginTop="6dp"
         android:gravity="center"
         android:orientation="vertical">
 
@@ -39,7 +38,7 @@
             android:foregroundGravity="center"
             android:gravity="center"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/signup" />
+            app:srcCompat="@drawable/main_inmain" />
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -301,6 +300,7 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="للشكاوى والإقتراحات عبر البريد الإلكتروني"
             android:textColor="@color/black"
             android:textStyle="bold" />
