@@ -17,4 +17,14 @@ public class mainpage_admin extends AppCompatActivity {
         Intent intent = new Intent(mainpage_admin.this,add_driver.class);
         startActivity(intent);
     }
+
+    public void goToAllDrivers(View view) {
+        Intent intent = new Intent(mainpage_admin.this,drivers_interface.class);
+        startActivity(intent);
+    }
+
+    public void goToEditProfile(View view) {
+        Intent intent = new Intent(mainpage_admin.this,editprofile.class);
+        startActivity(intent);
+    }
 }

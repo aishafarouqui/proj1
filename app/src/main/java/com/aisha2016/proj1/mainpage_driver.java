@@ -31,4 +31,8 @@ public class mainpage_driver extends AppCompatActivity {
     }
 
 
+    public void goToAllDrivers(View view) {
+            Intent  intent = new Intent(mainpage_driver.this,drivers_interface.class);
+            startActivity(intent);
+    }
 }

@@ -47,6 +47,7 @@
                 android:layout_height="150dp"
                 android:background="@drawable/in_trip"
                 android:orientation="vertical"
+                android:onClick="goToAllDrivers"
 
                 >
 
@@ -102,6 +103,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/in_trip"
             android:gravity="center"
+            android:onClick="goToEditProfile"
             android:orientation="vertical">
 
             <ImageView
