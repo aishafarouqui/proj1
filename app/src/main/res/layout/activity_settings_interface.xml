@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F6FC"
+    tools:context=".settings_interface">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="523dp"
+        android:layout_height="340dp"
+        android:layout_marginTop="-150dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/image1" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings2" />
+
+    <TextView
+        android:id="@+id/pageName2"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="الإعدادات "
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="413dp"
+        android:layout_height="515dp"
+        android:layout_marginTop="164dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/whitebox"
+            android:layout_width="376dp"
+            android:layout_height="495dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="23dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginRight="23dp"
+            android:layout_weight="1"
+            android:alpha="0.50"
+            android:background="@drawable/shadow"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/whitebox2"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle"
+            android:hapticFeedbackEnabled="false"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/viewInvoice"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox2"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="عرض الفاتورة"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whitebox3"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="94dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle2"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/delAccount"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox3"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="حذف الحساب"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whitebox4"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="142dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/contactUs"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox4"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="التواصل معنا"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whitebox5"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="235dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle"
+            android:hapticFeedbackEnabled="false"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/whoAreWe"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox5"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="من نحن "
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whitebox6"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="282dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle2"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/support"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox6"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="الدعم"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whitebox7"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="329dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle2"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/conditions"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox7"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="شروط الإستخدام"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/whitebox8"
+            android:layout_width="314dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="376dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/rectangle"
+            android:rotation="180" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="298dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@id/whitebox8"
+            android:layout_centerHorizontal="false"
+            android:layout_marginStart="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center|right"
+            android:text="سياسة الخصوصية"
+            android:textColor="#737373"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/logoutbuttun"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:layout_alignStart="@+id/whitebox"
+            android:layout_alignLeft="@+id/whitebox"
+            android:layout_alignEnd="@+id/whitebox"
+            android:layout_alignRight="@+id/whitebox"
+            android:layout_marginStart="100dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="455dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:paddingTop="-10dp"
+            android:paddingBottom="6dp"
+            android:text="تسجيل خروج"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="visible"
+            app:backgroundTint="#4d1290"
+            app:cornerRadius="5dp"
+            
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/NavBar"
+        android:layout_width="412dp"
+        android:layout_height="50dp"
+        android:background="#4d1290"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="50dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/settings" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="65dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center_vertical"
+            app:srcCompat="@drawable/user" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="10dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/line" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/home" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

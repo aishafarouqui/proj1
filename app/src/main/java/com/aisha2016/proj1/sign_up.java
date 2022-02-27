@@ -2,6 +2,7 @@ package com.aisha2016.proj1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -29,23 +30,25 @@ public class sign_up extends AppCompatActivity {
         PassengerCRUD passcrud = new PassengerCRUD();
 
         signUp.setOnClickListener(v-> {
-            /*Passenger pass = new Passenger(passNameSignUp.getText().toString(), passEmailSignUp.getText().toString(), passPhoneSignUp.getText().toString(), passPassword1SignUp.getText().toString(), passPassword2SignUp.getText().toString());
-            passcrud.add(pass).addOnSuccessListener(suc->{
+            Passenger pass = new Passenger(passNameSignUp.getText().toString(), passEmailSignUp.getText().toString(), passPhoneSignUp.getText().toString(), passPassword1SignUp.getText().toString(), passPassword2SignUp.getText().toString());
+            passcrud.add(pass).addOnSuccessListener(suc -> {
                 Toast.makeText(this, "تم إنشاء حساب جديد", Toast.LENGTH_SHORT).show();
-            }).addOnFailureListener(er->{
-                Toast.makeText(this, "عذرا لقد حصل خطأ ما!"+er.getMessage(), Toast.LENGTH_SHORT).show();
-            });*/
+                Intent intent = new Intent(sign_up.this,sign_in.class);
+                startActivity(intent);
+            }).addOnFailureListener(er -> {
+                Toast.makeText(this, "عذرا لقد حصل خطأ ما!" + er.getMessage(), Toast.LENGTH_SHORT).show();
+            });
 
-            HashMap<String, Object> hashMap = new HashMap<>();
+           /* HashMap<String, Object> hashMap = new HashMap<>();
             hashMap.put("name", passNameSignUp.getText().toString());
             passcrud.delete("MwLF4c0cSWwYqBW6jYw").addOnSuccessListener(suc->{
                 Toast.makeText(this, "تم حذ1ف البيانات", Toast.LENGTH_SHORT).show();
             }).addOnFailureListener(er->{
                 Toast.makeText(this, "عذرا لقد حصل خطأ ما!"+er.getMessage(), Toast.LENGTH_SHORT).show();
             });
-                });
+                });*/
 
-        //Drop down region menu
+            //Drop down region menu
 
         /*Spinner regions = findViewById(R.id.region);
         spinner.setPrompt("اختر المنطقة");
@@ -68,5 +71,6 @@ public class sign_up extends AppCompatActivity {
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {*/
 
-    }
-    }
+        });
+    }}
+

@@ -25,12 +25,15 @@
         android:id="@+id/lv_my_trips"
         android:layout_width="match_parent"
         android:layout_height="508dp"
+        android:layout_above="@id/NavBae"
         android:layout_below="@+id/trips"
+        android:layout_marginTop="60dp"
         android:paddingLeft="20dp"
         android:paddingRight="20dp"
         android:paddingBottom="30dp"
-        android:layout_marginTop="60dp"
-        tools:listitem="@layout/lv_my_trips"/>
+        tools:listitem="@layout/lv_my_trips"
+        android:divider="@null"
+        />
 
     <LinearLayout
         android:id="@+id/NavBae"

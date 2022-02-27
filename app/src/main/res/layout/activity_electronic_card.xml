@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_weight="20"
     android:background="@drawable/trip"
-    tools:context=".sign_in">
+    tools:context=".electronic_card">
 
     <LinearLayout
         android:id="@+id/LinearLayout3"

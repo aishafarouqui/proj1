@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/trip"
-    tools:context=".mainpage_driver">
+    tools:context=".mainpage_passnenger">
 
 
 
@@ -38,15 +38,14 @@
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp"
-            >
+            android:padding="10dp">
 
             <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="@drawable/in_trip"
-                android:orientation="vertical"
-                >
+                android:onClick="goToTrackMasarPass"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/signUp"
@@ -69,9 +68,10 @@
             <LinearLayout
                 android:layout_width="150dp"
                 android:layout_height="150dp"
+                android:layout_marginLeft="15dp"
                 android:background="@drawable/in_trip"
-                android:orientation="vertical"
-                android:layout_marginLeft="15dp">
+                android:onClick="goToCompanyType"
+                android:orientation="vertical">
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -107,6 +107,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:background="@drawable/in_trip"
+                android:onClick="goToElcCard"
                 android:orientation="vertical"
                 >
 
@@ -133,10 +134,12 @@
                 android:layout_height="150dp"
                 android:background="@drawable/in_trip"
                 android:orientation="vertical"
-                android:layout_marginLeft="15dp">
+                android:onClick="goToMyPassTrips"
+                android:layout_marginLeft="15dp"
+                tools:ignore="UsingOnClickInXml">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/logo"
                     android:layout_width="140dp"
                     android:layout_height="100dp"
                     android:layout_marginTop="10dp"
@@ -161,6 +164,7 @@
             android:layout_height="150dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/in_trip"
+            android:onClick="goToEditProfile"
             android:gravity="center"
 
             android:orientation="vertical">

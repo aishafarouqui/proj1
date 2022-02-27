@@ -34,7 +34,9 @@
             android:layout_marginTop="69dp"
             android:paddingLeft="20dp"
             android:paddingRight="20dp"
-            tools:listitem="@layout/lv_pass_trips">
+            tools:listitem="@layout/lv_pass_trips"
+            android:divider="@null"
+            >
 
 
         </ListView>
@@ -59,6 +61,7 @@
                 android:id="@+id/imageView12"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
+                android:onClick="goToTripSelection"
                 app:srcCompat="@android:drawable/ic_input_add" />
         </LinearLayout>
     </LinearLayout>

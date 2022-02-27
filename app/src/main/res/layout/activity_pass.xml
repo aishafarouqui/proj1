@@ -28,7 +28,9 @@
         android:layout_height="476dp"
         android:layout_below="@id/passengers"
         android:layout_marginTop="70dp"
-        tools:listitem="@layout/lv_passenger" />
+        tools:listitem="@layout/lv_passenger"
+        android:divider="@null"
+        />
 
     <LinearLayout
         android:id="@+id/NavBae"

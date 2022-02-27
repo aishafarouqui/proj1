@@ -2,7 +2,9 @@ package com.aisha2016.proj1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -30,5 +32,10 @@ public class pass_trips extends AppCompatActivity {
         // ArrayAdapter arrayPass = new ArrayAdapter(this,android.R.layout.simple_list_item_1,listPass);
         ArrayAdapter arrayPass = new ArrayAdapter(this,R.layout.lv_pass_trips,R.id.tvPassTrips,listPass);
         PassengersList.setAdapter(arrayPass);
+    }
+
+    public void goToTripSelection(View view) {
+        Intent intent = new Intent(pass_trips.this,trip_selection.class);
+        startActivity(intent);
     }
 }
