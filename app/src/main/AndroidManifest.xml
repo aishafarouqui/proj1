@@ -9,11 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="false"
         android:theme="@style/Theme.Proj1">
-        <activity android:name=".drivers_interface"></activity>
-        <activity android:name=".driver_profile_interface" />
+        <activity android:name=".editprofile"></activity>
         <activity android:name=".settings_interface" />
-        <activity android:name=".editprofile" />
-        <activity android:name=".sign_up" />
+        <activity android:name=".type_subscription_interface" />
         <activity android:name=".infoCompany" />
         <activity android:name=".mainpage_passnenger" />
         <activity android:name=".transinformation" />
@@ -21,13 +19,13 @@
         <activity android:name=".pass_trips" />
         <activity android:name=".company" />
         <activity android:name=".my_trips" />
-        <activity android:name=".sign_in" />
         <activity android:name=".electronic_card" />
-        <activity android:name=".type_subscription_interface" />
+        <activity android:name=".drivers_interface" />
         <activity android:name=".add_driver" />
         <activity android:name=".pass"/>
+        <activity android:name=".sign_up"/>
         <activity android:name=".mainpage_driver"/>
-        <activity android:name=".mainpage_admin">
+        <activity android:name=".driver_profile_interface">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

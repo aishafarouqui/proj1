@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_weight="20"
     android:background="@drawable/trip"
-    tools:context=".sign_in">
+    tools:context=".editprofile">
 
     <LinearLayout
         android:id="@+id/LinearLayout3"
@@ -33,7 +33,7 @@
             android:id="@+id/profile_image2"
             android:layout_width="match_parent"
             android:layout_height="75dp"
-
+            android:onClick="addPhoto"
             android:background="#00FFFFFF"
             android:foregroundGravity="center"
             android:gravity="center"

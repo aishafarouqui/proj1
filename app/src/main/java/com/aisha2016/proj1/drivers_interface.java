@@ -2,8 +2,6 @@ package com.aisha2016.proj1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
-import android.media.session.MediaSession;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -13,14 +11,10 @@ import java.util.List;
 
 public class drivers_interface extends AppCompatActivity {
 
-    //ListView listView;
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drivers_interface);
-
 
         ListView PassengersList = (ListView) findViewById(R.id.listView);
         List listPass = new ArrayList();
@@ -73,14 +67,5 @@ public class drivers_interface extends AppCompatActivity {
         listView.setAdapter(myAdapter);
 
          */
-
-
-
     }
-
-
 }
-
-
-
-

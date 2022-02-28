@@ -33,7 +33,7 @@ public class sign_up extends AppCompatActivity {
             Passenger pass = new Passenger(passNameSignUp.getText().toString(), passEmailSignUp.getText().toString(), passPhoneSignUp.getText().toString(), passPassword1SignUp.getText().toString(), passPassword2SignUp.getText().toString());
             passcrud.add(pass).addOnSuccessListener(suc -> {
                 Toast.makeText(this, "تم إنشاء حساب جديد", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(sign_up.this,sign_in.class);
+                Intent  intent = new Intent(sign_up.this,sign_in.class);
                 startActivity(intent);
             }).addOnFailureListener(er -> {
                 Toast.makeText(this, "عذرا لقد حصل خطأ ما!" + er.getMessage(), Toast.LENGTH_SHORT).show();
@@ -72,5 +72,9 @@ public class sign_up extends AppCompatActivity {
     public void onNothingSelected(AdapterView<?> adapterView) {*/
 
         });
-    }}
+    }
+
+    public void goToSignIn(View view) {
+    }
+}
 

@@ -15,9 +15,8 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
             android:gravity="right|center_horizontal"
             android:orientation="horizontal">
 
@@ -25,6 +24,7 @@
                 android:id="@+id/button3"
                 android:layout_width="65dp"
                 android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginRight="5dp"
                 android:fontFamily="sans-serif-black"
@@ -59,6 +59,15 @@
                 android:text="امجاد حبيب "
                 android:textSize="18dp"
                 android:textStyle="bold" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageView"
+                android:layout_width="65dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/profile_icon"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="1dp" />
 
 
         </LinearLayout>

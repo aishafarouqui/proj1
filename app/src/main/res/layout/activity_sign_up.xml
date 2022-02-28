@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_weight="20"
     android:background="@drawable/login"
-    tools:context=".sign_in">
+    tools:context=".sign_up">
 
     <LinearLayout
         android:id="@+id/LinearLayout3"
@@ -171,7 +171,8 @@
             android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:paddingLeft="10dp"
-            app:srcCompat="@drawable/login_arrow" />
+            app:srcCompat="@drawable/login_arrow"
+            android:onClick="goToSignIn"/>
 
         <TextView
             android:id="@+id/textView2"

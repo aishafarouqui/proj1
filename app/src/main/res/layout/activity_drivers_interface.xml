@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,35 +8,36 @@
     tools:context=".drivers_interface">
 
     <TextView
-        android:id="@+id/pageName3"
-        android:layout_width="wrap_content"
-        android:layout_height="45dp"
-        android:layout_marginTop="50dp"
+        android:id="@+id/passengers"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
         android:text="السائقين"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:textColor="#FFFFFF"
-        android:textSize="34sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp" />
 
     <ListView
         android:id="@+id/listView"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:layout_width="match_parent"
-        android:layout_height="473dp"
+        android:layout_height="476dp"
+        android:layout_below="@id/passengers"
+        android:layout_marginTop="70dp"
+        tools:listitem="@layout/lv_drivers2"
         android:divider="@null"
-        android:layout_below="@+id/pageName3"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/NavBar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/lv_drivers2" />
+        />
 
     <LinearLayout
-        android:id="@+id/NavBar"
+        android:id="@+id/NavBae"
         android:layout_width="412dp"
         android:layout_height="50dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="true"
         android:background="#4d1290"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageView
-            android:id="@+id/logo"
+            android:id="@+id/imageView6"
             android:layout_width="50dp"
             android:layout_height="31dp"
             android:layout_gravity="center_vertical"
@@ -52,7 +53,7 @@
             app:srcCompat="@drawable/settings" />
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView7"
             android:layout_width="10dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
@@ -64,10 +65,10 @@
             android:layout_width="65dp"
             android:layout_height="31dp"
             android:layout_gravity="center_vertical"
-            app:srcCompat="@drawable/user" />
+            app:srcCompat="@drawable/person" />
 
         <ImageView
-            android:id="@+id/imageView6"
+            android:id="@+id/imageView9"
             android:layout_width="10dp"
             android:layout_height="40dp"
             android:layout_gravity="center_vertical"
@@ -75,7 +76,7 @@
             app:srcCompat="@drawable/line" />
 
         <ImageView
-            android:id="@+id/imageView3"
+            android:id="@+id/imageView10"
             android:layout_width="50dp"
             android:layout_height="30dp"
             android:layout_gravity="center_vertical"
@@ -83,4 +84,4 @@
             app:srcCompat="@drawable/home" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
