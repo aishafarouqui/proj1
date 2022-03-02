@@ -38,7 +38,7 @@
             android:textSize="30sp" />
 
         <EditText
-            android:id="@+id/passEmailSignUp"
+            android:id="@+id/passEmailSignIn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="50dp"
@@ -52,7 +52,7 @@
             android:paddingEnd="12dp" />
 
         <EditText
-            android:id="@+id/passenger_passward"
+            android:id="@+id/passPasswordSignIn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="20dp"
@@ -67,12 +67,13 @@
             android:paddingEnd="12dp" />
 
         <TextView
+            android:id="@+id/notHaveAcount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
             android:gravity="right|center_vertical"
-            android:text="ليس لديك حساب؟"
             android:onClick="goToSignUp"
+            android:text="ليس لديك حساب؟"
             android:textColor="#3F51B5"
             android:textSize="18sp"
             app:backgroundTint="#F2F5FE" />

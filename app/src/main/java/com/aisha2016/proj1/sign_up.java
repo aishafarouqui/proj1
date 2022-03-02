@@ -88,6 +88,8 @@ public class sign_up extends AppCompatActivity {
         }
         else if (!pass1.equals(pass2)){ Toast.makeText(this, "كلمتا المرور غير متطابقتان!", Toast.LENGTH_LONG).show();
         }
+        else if (pass1.length()< 6){ Toast.makeText(this, "يجب أن لا يقل كلمة المرور عن 6 عناصر", Toast.LENGTH_LONG).show();
+        }
         else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){ Toast.makeText(this, "الرجاء إدخال بريد إالكتروني صحيح", Toast.LENGTH_LONG).show();
         }
 
