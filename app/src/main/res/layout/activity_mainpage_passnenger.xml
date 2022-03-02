@@ -182,7 +182,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="7dp"
                 android:gravity="center"
-                android:text="الصفحة الرئيسية"
+                android:text="الصفحة الشخصية"
                 android:textColor="#000000"
                 android:textSize="20sp" />
 

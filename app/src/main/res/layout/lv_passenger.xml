@@ -25,14 +25,18 @@
             android:textSize="25sp"
             android:textStyle="bold" />
 
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/signUp"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:src="@drawable/profile_icon"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
             android:layout_gravity="right"
             android:layout_marginRight="20dp"
             android:baselineAlignBottom="false"
-            app:srcCompat="@drawable/main_inmain" />
+            />
+
 
     </LinearLayout>
 

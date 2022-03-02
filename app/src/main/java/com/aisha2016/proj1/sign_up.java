@@ -1,9 +1,10 @@
 package com.aisha2016.proj1;
-
+///////////////////////////////////// باقي الفاليديشن /////////////////////////////////////
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,32 +13,69 @@ import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 import java.util.HashMap;
 
 public class sign_up extends AppCompatActivity {
+    /*private*/ EditText passNameSignUp, passEmailSignUp, passPhoneSignUp, passPassword1SignUp,passPassword2SignUp;
+    /*private*/ ImageView signUp;
+    /*private*/ FirebaseAuth auth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign_up);
 
-        final EditText passNameSignUp = findViewById(R.id.passNameSignUp);
-        final EditText passEmailSignUp = findViewById(R.id.passEmailSignUp);
-        final EditText passPhoneSignUp = findViewById(R.id.passPhoneSignUp);
-        final EditText passPassword1SignUp = findViewById(R.id.passPassword1SignUp);
-        final EditText passPassword2SignUp = findViewById(R.id.passPassword2SignUp);
-        ImageView signUp = findViewById(R.id.signUp);
-        PassengerCRUD passcrud = new PassengerCRUD();
+        passNameSignUp = findViewById(R.id.passNameSignUp);
+        passEmailSignUp = findViewById(R.id.passEmailSignUp);
+        passPhoneSignUp = findViewById(R.id.passPhoneSignUp);
+        passPassword1SignUp = findViewById(R.id.passPassword1SignUp);
+        passPassword2SignUp = findViewById(R.id.passPassword2SignUp);
+        signUp = findViewById(R.id.signUp);
+        auth = FirebaseAuth.getInstance();
+
 
         signUp.setOnClickListener(v-> {
-            Passenger pass = new Passenger(passNameSignUp.getText().toString(), passEmailSignUp.getText().toString(), passPhoneSignUp.getText().toString(), passPassword1SignUp.getText().toString(), passPassword2SignUp.getText().toString());
-            passcrud.add(pass).addOnSuccessListener(suc -> {
+
+            String name = passNameSignUp.getText().toString();
+            String email = passEmailSignUp.getText().toString();
+            String phoneNum = passPhoneSignUp.getText().toString();
+            String pass1 = passPassword1SignUp.getText().toString();
+            String pass2 = passPassword2SignUp.getText().toString();
+
+            if (!name.isEmpty() && !email.isEmpty() && !phoneNum.isEmpty() && !pass1.isEmpty() && !pass2.isEmpty() && Patterns.EMAIL_ADDRESS.matcher(email).matches() && pass1.equals(pass2)){
+                Passenger pass = new Passenger(name, email, phoneNum, pass1, pass2);
+                pass.add(pass).addOnSuccessListener(suc -> {
+                    Toast.makeText(this, "تم إنشاء حساب جديد", Toast.LENGTH_SHORT).show();
+                    Intent  intent = new Intent(sign_up.this,sign_in.class);
+                    startActivity(intent);
+                }).addOnFailureListener(er -> {
+                    Toast.makeText(this, "عذرا لقد حصل خطأ ما!" + er.getMessage(), Toast.LENGTH_SHORT).show();
+                });
+
+            }
+                else if (name.isEmpty() || email.isEmpty() || phoneNum.isEmpty() || pass1.isEmpty() || pass2.isEmpty()){
+                Toast.makeText(this, "الرجاء تعبئة جميع الحقول المطلوبة", Toast.LENGTH_LONG).show();
+                }
+                else if (!pass1.equals(pass2)){ Toast.makeText(this, "كلمتا المرور غير متطابقتان!", Toast.LENGTH_LONG).show();
+                }
+                else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){ Toast.makeText(this, "الرجاء إدخال بريد إالكتروني صحيح", Toast.LENGTH_LONG).show();
+            }
+
+
+
+
+
+
+            /*Passenger pass = new Passenger(passNameSignUp.getText().toString(), passEmailSignUp.getText().toString(), passPhoneSignUp.getText().toString(), passPassword1SignUp.getText().toString(), passPassword2SignUp.getText().toString());
+            pass.add(pass).addOnSuccessListener(suc -> {
                 Toast.makeText(this, "تم إنشاء حساب جديد", Toast.LENGTH_SHORT).show();
                 Intent  intent = new Intent(sign_up.this,sign_in.class);
                 startActivity(intent);
             }).addOnFailureListener(er -> {
                 Toast.makeText(this, "عذرا لقد حصل خطأ ما!" + er.getMessage(), Toast.LENGTH_SHORT).show();
-            });
+            });*/
 
            /* HashMap<String, Object> hashMap = new HashMap<>();
             hashMap.put("name", passNameSignUp.getText().toString());
@@ -74,7 +112,11 @@ public class sign_up extends AppCompatActivity {
         });
     }
 
+
+
     public void goToSignIn(View view) {
+        Intent  intent = new Intent(sign_up.this,sign_in.class);
+        startActivity(intent);
     }
 }
 

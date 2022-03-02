@@ -10,11 +10,7 @@ public class Companies {
     private String price;
     private String evaluation;
     private String email;
-    ArrayList<Driver> drivers = new ArrayList<>();
 
-
-    public Companies() {
-    }
     public Companies(String name, ImageView logo, String price, String evaluation, String email) {
         this.name = name;
         this.logo = logo;
@@ -56,7 +52,6 @@ public class Companies {
         this.evaluation = evaluation;
     }
 
-
     public String getEmail() {
         return email;
     }
@@ -65,8 +60,10 @@ public class Companies {
         this.email = email;
     }
 
-    public void addDriver(String name, String email, String phone, String password, String region, String busNum, String busplateNum){
-        Driver driver = new Driver(name ,email, phone, password, region, busNum, busplateNum);
-        drivers.add(driver);
+
+
+    public void addDriver(String name, String email, String phone, String password, String region, String busNum, String busplateNum, Companies comp){
+        Driver driver = new Driver(name ,email, phone, password, region, busNum, busplateNum, comp);
     }
+
 }

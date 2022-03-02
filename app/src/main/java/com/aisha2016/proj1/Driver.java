@@ -8,17 +8,10 @@ public class Driver {
     private String region;
     private String busNum;
     private String busplateNum;
+    Companies comp;
 
 
-    public String getBusplateNum() {
-        return busplateNum;
-    }
-
-    public void setBusplateNum(String busplateNum) {
-        this.busplateNum = busplateNum;
-    }
-
-    public Driver(String name, String email, String password, String phone, String region, String busNum, String busplateNum) {
+    public Driver(String name, String email, String password, String phone, String region, String busNum, String busplateNum, Companies comp) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -26,6 +19,7 @@ public class Driver {
         this.region = region;
         this.busNum = busNum;
         this.busplateNum = busplateNum;
+        this.comp = comp;
     }
 
     public String getBusNum() {
@@ -75,6 +69,20 @@ public class Driver {
     public void setRegion(String region) {
         this.region = region;
     }
+
+    public Companies getComp() { return comp; }
+
+    public void setComp(Companies comp) { this.comp = comp; }
+
+    public String getBusplateNum() {
+        return busplateNum;
+    }
+
+    public void setBusplateNum(String busplateNum) {
+        this.busplateNum = busplateNum;
+    }
+
+
 
 
 }

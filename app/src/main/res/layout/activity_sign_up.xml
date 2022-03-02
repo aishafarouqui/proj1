@@ -28,16 +28,20 @@
             android:text="تسجيل جديد"
             android:textColor="#FFFFFF"
             android:textSize="30sp" />
-
-        <ImageView
+        <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/profile_image"
             android:layout_width="75dp"
             android:layout_height="75dp"
-
-            android:background="#00FFFFFF"
+            android:src="@drawable/signup"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="1dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="90dp"
+            android:baselineAlignBottom="false"
             android:foregroundGravity="center"
             android:gravity="center"
-            app:srcCompat="@drawable/signup" />
+            />
+
 
         <EditText
             android:id="@+id/passNameSignUp"
@@ -80,7 +84,7 @@
             android:ems="10"
             android:gravity="right|center_vertical"
             android:hint="رقم الجوال"
-            android:inputType="text"
+            android:inputType="text|phone"
 
             android:paddingStart="12dp"
             android:paddingEnd="12dp" />
@@ -143,7 +147,8 @@
             android:layout_marginTop="5dp"
             android:background="?android:attr/selectableItemBackground"
             android:gravity="right|center_vertical"
-            android:text="ليس لديك حساب؟"
+            android:onClick="goToSignIn"
+            android:text="لديك حساب؟"
             android:textColor="#3F51B5"
             android:textSize="16sp"
             app:backgroundTint="#F2F5FE" />
@@ -171,8 +176,7 @@
             android:layout_marginRight="7dp"
             android:layout_weight="1"
             android:paddingLeft="10dp"
-            app:srcCompat="@drawable/login_arrow"
-            android:onClick="goToSignIn"/>
+            app:srcCompat="@drawable/login_arrow" />
 
         <TextView
             android:id="@+id/textView2"
