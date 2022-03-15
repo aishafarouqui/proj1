@@ -24,6 +24,7 @@ import javax.annotation.Nullable;
 import io.reactivex.annotations.NonNull;
 
 public class editprofile extends AppCompatActivity {
+    EditText name, email, password, region, phoneNum;
    /* ImageView photo;
     EditText name, email, password, region, phoneNum;
     FirebaseStorage storage;
@@ -36,8 +37,32 @@ public class editprofile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_editprofile);
 
+        // AAAI 9may
+        name = findViewById(R.id.passNameSignUp);
+        email = findViewById(R.id.passEmailSignUp);
+        password = findViewById(R.id.passPassword1SignUp);
+       // region = findViewById(R.id.region);
+        phoneNum = findViewById(R.id.passPhoneSignUp);
+         //show all data
+          ShoeAllData(); //END AAAI 9may
+
 
     }
+    // AAAI 9may
+    private void ShoeAllData() {
+        Intent intent = getIntent();
+        String user_username  = intent.getStringExtra("name");
+        String user_useremail  = intent.getStringExtra("email");
+        String user_userphon  = intent.getStringExtra("phon");
+        String user_userpassword = intent.getStringExtra("password");
+        String user_userregion  = intent.getStringExtra("region");
+
+        name.setText(user_username);
+        email.setText(user_useremail);
+        password.setText(user_userphon);
+        phoneNum.setText(user_userpassword);
+        //region.setText(user_userregion);
+    } //END AAAI 9may
     /*Add photo*/
 
    /* public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){

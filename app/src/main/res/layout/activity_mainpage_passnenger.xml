@@ -207,7 +207,8 @@
             android:layout_height="31dp"
             android:layout_gravity="center_vertical"
             android:layout_weight="1"
-            app:srcCompat="@drawable/settings" />
+            app:srcCompat="@drawable/settings"
+            android:onClick="goToSetting"/>
 
         <ImageView
             android:id="@+id/imageView7"

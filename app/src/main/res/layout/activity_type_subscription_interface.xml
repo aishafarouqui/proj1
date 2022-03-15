@@ -44,35 +44,12 @@
                 android:id="@+id/whitebox1"
                 android:layout_width="334dp"
                 android:layout_height="161dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="16dp"
                 android:background="@drawable/shadow"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
-            <Button
-                android:id="@+id/showbuttun1"
-                android:layout_width="wrap_content"
-                android:layout_height="42dp"
-                android:layout_marginStart="23dp"
-                android:layout_marginTop="130dp"
-                android:layout_marginBottom="82dp"
-                android:fontFamily="sans-serif"
-                android:gravity="center"
-                android:onClick="goTotransinformationUqu"
-                android:paddingTop="-10dp"
-                android:paddingBottom="6dp"
-                android:text="عرض"
-                android:textColor="#FFFFFF"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                android:visibility="visible"
-                app:backgroundTint="#4d1290"
-                app:cornerRadius="5dp"
-                app:layout_constraintBottom_toBottomOf="@+id/whitebox1"
-                app:layout_constraintStart_toStartOf="@+id/whitebox1"
-                app:layout_constraintTop_toTopOf="@+id/whitebox1"
-                tools:ignore="TouchTargetSizeCheck" />
 
             <TextView
                 android:id="@+id/textView1"
@@ -91,6 +68,34 @@
                 app:layout_constraintBottom_toTopOf="@+id/textView2"
                 app:layout_constraintEnd_toEndOf="@+id/whitebox1"
                 app:layout_constraintStart_toStartOf="@+id/whitebox1" />
+
+            <Button
+
+                android:id="@+id/showbuttun1"
+                android:visibility="visible"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="92dp"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginStart="23dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="45dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:onClick="goToCompanyCards"
+                android:paddingTop="-10dp"
+                android:paddingBottom="6dp"
+                android:text="عرض"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                app:backgroundTint="#4d1290"
+                app:cornerRadius="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/whitebox1"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TouchTargetSizeCheck" />/>
+
 
             <TextView
                 android:id="@+id/textView2"

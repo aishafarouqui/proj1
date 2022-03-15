@@ -2,24 +2,29 @@ package com.aisha2016.proj1;
 
 import android.widget.ImageView;
 
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.HashMap;
 
-public class Companies {
-    private String name;
-    private ImageView logo;
-    private String price;
-    private String evaluation;
-    private String email;
+public class Companies implements Serializable {
+    private String name,price/*,evaluation,email*/;
+    /*private ImageView logo;*/
+   // private float evaluation;
+   // private String email;
 
-    public Companies(String name, ImageView logo, String price, String evaluation, String email) {
+    public Companies(/*String email, String evaluation, */String name, /*ImageView logo, */String price ) {
+        /*this.logo = logo;*/
+        //this.email = email;
+        //this.evaluation = evaluation;
         this.name = name;
-        this.logo = logo;
         this.price = price;
-        this.evaluation = evaluation;
-        this.email = email;
 
     }
-
+//Getter and Setter
     public String getName() {
         return name;
     }
@@ -28,13 +33,13 @@ public class Companies {
         this.name = name;
     }
 
-    public ImageView getLogo() {
+   /* public ImageView getLogo() {
         return logo;
     }
 
     public void setLogo(ImageView logo) {
         this.logo = logo;
-    }
+    }*/
 
     public String getPrice() {
         return price;
@@ -44,7 +49,7 @@ public class Companies {
         this.price = price;
     }
 
-    public String getEvaluation() {
+    /*public String getEvaluation() {
         return evaluation;
     }
 
@@ -58,12 +63,25 @@ public class Companies {
 
     public void setEmail(String email) {
         this.email = email;
-    }
+    }*/
 
 
-
+/*
     public void addDriver(String name, String email, String phone, String password, String region, String busNum, String busplateNum, Companies comp){
         Driver driver = new Driver(name ,email, phone, password, region, busNum, busplateNum, comp);
     }
+    FirebaseDatabase db = FirebaseDatabase.getInstance();
+    private DatabaseReference databaseReference = db.getReference(Companies.class.getSimpleName());
+
+    public Task<Void> add(Companies comp){
+        return databaseReference.push().setValue(comp);
+    }
+
+    public Task<Void> update(String key, HashMap<String, Object> hashMap ){
+        return databaseReference.child(key).updateChildren(hashMap);    }
+
+    public Task<Void> delete(String key){
+        return databaseReference.child(key).removeValue();
+    }*/
 
 }

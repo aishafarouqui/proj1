@@ -12,6 +12,7 @@ public class Passenger {
     private String password;
     private String phone;
     private String region;
+    private String subsType;
 
     public Passenger() {
     }
@@ -22,6 +23,14 @@ public class Passenger {
         this.phone = phone;
         this.password = password;
         this.region = region;
+    }
+
+    public String getSubsType() {
+        return subsType;
+    }
+
+    public void setSubsType(String subsType) {
+        this.subsType = subsType;
     }
 
     public String getName() {

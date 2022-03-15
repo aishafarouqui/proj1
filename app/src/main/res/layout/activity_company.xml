@@ -21,15 +21,15 @@
         android:textColor="#FFFFFF"
         android:textSize="30sp" />
 
-    <ListView
-        android:id="@+id/lv_company"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lv_company1"
         android:layout_width="match_parent"
         android:layout_height="558dp"
         android:layout_above="@id/NavBae"
         android:layout_below="@+id/comp"
-        tools:listitem="@layout/lv_company"
-        android:divider="@null"
-        />
+        android:divider="@null" />
+
+    <!--    tools:listitem="@layout/lv_company" -->
 
     <LinearLayout
         android:id="@+id/NavBae"
@@ -39,7 +39,7 @@
         android:layout_alignParentBottom="true"
         android:background="#4d1290"
         android:orientation="horizontal"
-       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
