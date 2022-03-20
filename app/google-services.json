@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "542187271949",
-    "project_id": "masardb-926fd",
-    "storage_bucket": "masardb-926fd.appspot.com"
+    "project_number": "602653332782",
+    "project_id": "masar-cd55c",
+    "storage_bucket": "masar-cd55c.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:542187271949:android:f261d5ad1031914a79a244",
+        "mobilesdk_app_id": "1:602653332782:android:ce91b11c7441cd2ace96bf",
         "android_client_info": {
           "package_name": "com.aisha2016.proj1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "542187271949-bqbe9rluechetiqc7nj8k2cj81s90ps0.apps.googleusercontent.com",
+          "client_id": "602653332782-1tjq9164iji7jksbk9toseh603kisa19.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAdzuuHQBUzWbmo9eLweGsLsABcs-yuE1A"
+          "current_key": "AIzaSyBYry-nQFlU4o6a4J68uluqVcNBgf-YrCA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "542187271949-bqbe9rluechetiqc7nj8k2cj81s90ps0.apps.googleusercontent.com",
+              "client_id": "602653332782-1tjq9164iji7jksbk9toseh603kisa19.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

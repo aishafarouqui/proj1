@@ -21,7 +21,7 @@ import com.google.firebase.storage.UploadTask;
 
 import javax.annotation.Nullable;
 
-import io.reactivex.annotations.NonNull;
+//import io.reactivex.annotations.NonNull;
 
 public class editprofile extends AppCompatActivity {
     EditText name, email, password, region, phoneNum;

@@ -26,34 +26,31 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 
 
-public class CompAdapter extends FirebaseRecyclerAdapter<Companies, CompAdapter.personsViewholder>{
+public class CompAdapter extends FirebaseRecyclerAdapter<Companies, CompAdapter.CompaniessViewholder>{
 
-
-
-    public CompAdapter(@NonNull FirebaseRecyclerOptions<Companies> options)
+    public CompAdapter(
+            @NonNull FirebaseRecyclerOptions<Companies> options)
     {
         super(options);
     }
-
 
     // Function to bind the view in Card view(here
     // "person.xml") iwth data in
     // model class(here "person.class")
     @Override
     protected void
-    onBindViewHolder(@NonNull personsViewholder holder,
-                     int position, @NonNull Companies model)
+    onBindViewHolder(@NonNull CompaniessViewholder holder,int position, @NonNull Companies model)
     {
 
         // Add firstname from model class (here
         // "person.class")to appropriate view in Card
         // view (here "person.xml")
-        holder.name.setText(model.getName());
+        holder.email.setText(model.getEmail());
 
         // Add lastname from model class (here
         // "person.class")to appropriate view in Card
         // view (here "person.xml")
-       // holder.email.setText(model.getEmail());
+        holder.name.setText(model.getName());
 
         // Add age from model class (here
         // "person.class")to appropriate view in Card
@@ -66,25 +63,26 @@ public class CompAdapter extends FirebaseRecyclerAdapter<Companies, CompAdapter.
     // which the data will be shown
     @NonNull
     @Override
-    public personsViewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
+    public CompaniessViewholder
+    onCreateViewHolder(@NonNull ViewGroup parent, int viewType)
     {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.lv_company, parent, false);
-        return new CompAdapter.personsViewholder(view);
+        return new CompAdapter.CompaniessViewholder(view);
     }
 
     // Sub Class to create references of the views in Crad
     // view (here "person.xml")
-    class personsViewholder
+    class CompaniessViewholder
             extends RecyclerView.ViewHolder {
-        TextView name, email, price;
-        public personsViewholder(@NonNull View itemView)
+        TextView email, name, price;
+        public CompaniessViewholder(@NonNull View itemView)
         {
             super(itemView);
 
-            name = itemView.findViewById(R.id.comp_name);
-           // email = itemView.findViewById(R.id.email_text);
-            price = itemView.findViewById(R.id.subscPrice);
+            email = itemView.findViewById(R.id.firstname);
+            name = itemView.findViewById(R.id.lastname);
+            price = itemView.findViewById(R.id.age);
         }
     }
 }

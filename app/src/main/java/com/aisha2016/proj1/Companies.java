@@ -11,15 +11,15 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class Companies implements Serializable {
-    private String name,price/*,evaluation,email*/;
+    private String email,name,price;
     /*private ImageView logo;*/
    // private float evaluation;
    // private String email;
 
-    public Companies(/*String email, String evaluation, */String name, /*ImageView logo, */String price ) {
+    public Companies(String email,/* String evaluation,*/ String name, /*ImageView logo, */String price ) {
         /*this.logo = logo;*/
-        //this.email = email;
-        //this.evaluation = evaluation;
+        this.email = email;
+       // this.evaluation = evaluation;
         this.name = name;
         this.price = price;
 
@@ -45,7 +45,7 @@ public class Companies implements Serializable {
         return price;
     }
 
-    public void setPrice(String price) {
+    public void setPFrice(String price) {
         this.price = price;
     }
 
@@ -56,32 +56,13 @@ public class Companies implements Serializable {
     public void setEvaluation(String evaluation) {
         this.evaluation = evaluation;
     }
-
+*/
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }*/
-
-
-/*
-    public void addDriver(String name, String email, String phone, String password, String region, String busNum, String busplateNum, Companies comp){
-        Driver driver = new Driver(name ,email, phone, password, region, busNum, busplateNum, comp);
     }
-    FirebaseDatabase db = FirebaseDatabase.getInstance();
-    private DatabaseReference databaseReference = db.getReference(Companies.class.getSimpleName());
-
-    public Task<Void> add(Companies comp){
-        return databaseReference.push().setValue(comp);
-    }
-
-    public Task<Void> update(String key, HashMap<String, Object> hashMap ){
-        return databaseReference.child(key).updateChildren(hashMap);    }
-
-    public Task<Void> delete(String key){
-        return databaseReference.child(key).removeValue();
-    }*/
 
 }
