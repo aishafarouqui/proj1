@@ -29,9 +29,9 @@
         <activity android:name=".pass" />
         <activity android:name=".settings_interface" />
         <activity android:name=".mainpage_driver" />
-        <activity android:name=".sign_in" />
+        <activity android:name=".company" />
         <activity android:name=".sign_up"/>
-        <activity android:name=".company"
+        <activity android:name=".sign_in"
 
             android:exported="true">
             <intent-filter>
